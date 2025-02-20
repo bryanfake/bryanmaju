@@ -15,12 +15,6 @@
 body{
     background-color: rgb(0, 0, 0);
 }
-header{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .gallery-container{
     display: flex;
@@ -47,8 +41,6 @@ header{
     transform: scale(1.3);
 }
 
-
-
 footer{
     height: 100px;
     display: flex;
@@ -58,37 +50,43 @@ footer{
     font-style: italic;
 }
 
-header h1 {
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+}
+
+h1 {
     font-family: "Great Vibes", cursive;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: #ff0000;
-    text-align: center;
-    letter-spacing: 2px;
     text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.2);
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Espaço entre o título e o subtítulo */
 }
 
 .subtitulo {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 50px;
     opacity: 0.9;
     font-style: italic;
+    text-align: center;
+    padding: 0 15px;
 }
-
 
     </style>
 </head>
 <body>
     <header>
         <h1>Nosso Amor em Cada Instante</h1>
+        <p class="subtitulo">Entre sorrisos e abraços, construímos memórias que jamais se apagarão.</p>
     </header>
-    <p class="subtitulo">Entre sorrisos e abraços, construímos memórias que jamais se apagarão.</p>
+    
     <main>
         <div class="gallery-container">
             <a href="Images/1.jpg" class="gallery-items">
